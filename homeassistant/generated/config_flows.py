@@ -85,6 +85,7 @@ FLOWS = [
     "faa_delays",
     "fireservicerota",
     "fjaraskupan",
+    "flaschen_taschen",
     "flick_electric",
     "flipr",
     "flo",

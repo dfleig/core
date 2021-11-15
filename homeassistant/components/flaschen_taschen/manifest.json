@@ -1,0 +1,15 @@
+{
+  "domain": "flaschen_taschen",
+  "name": "Flaschen Taschen Client",
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/flaschen_taschen",
+  "requirements": [],
+  "ssdp": [],
+  "zeroconf": [],
+  "homekit": {},
+  "dependencies": [],
+  "codeowners": [
+    "@dcfleig"
+  ],
+  "iot_class": "local_push"
+}

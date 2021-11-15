@@ -1,0 +1,79 @@
+# Example services.yaml entry
+
+# Service ID
+send_text:
+  # Service name as shown in UI
+  name: Send Text
+  # Description of the service
+  description: Send text to the FT server
+  # If the service accepts entity IDs, target allows the user to specify entities by entity, device, or area. If `target` is specified, `entity_id` should not be defined in the `fields` map. By default it shows only targets matching entities from the same domain as the service, but if further customization is required, target supports the entity, device, and area selectors (https://www.home-assistant.io/docs/blueprint/selectors/). Entity selector parameters will automatically be applied to device and area, and device selector parameters will automatically be applied to area.
+  target:
+  # Different fields that your service accepts
+  fields:
+    # Key of the field
+    text:
+      # Field name as shown in UI
+      name: Text
+      # Description of the field
+      description: Templated Text Value
+      # Whether or not field is required (default = false)
+      required: true
+      # Advanced fields are only shown when the advanced mode is enabled for the user (default = false)
+      advanced: false
+      # Example value that can be passed for this field
+      example: "Hello World"
+      # The default field value
+      default: "Hello World"
+    x_coordinate:
+      # Field name as shown in UI
+      name: X Coordinate
+      # Description of the field
+      description: The X coordinate to draw the text.
+      # Whether or not field is required (default = false)
+      required: true
+      # Advanced fields are only shown when the advanced mode is enabled for the user (default = false)
+      advanced: true
+      # Example value that can be passed for this field
+      example: 5
+      # The default field value
+      default: 0
+    y_coordinate:
+      # Field name as shown in UI
+      name: Y Coordinate
+      # Description of the field
+      description: The Y coordinate to draw the text.
+      # Whether or not field is required (default = false)
+      required: true
+      # Advanced fields are only shown when the advanced mode is enabled for the user (default = false)
+      advanced: true
+      # Example value that can be passed for this field
+      example: 5
+      # The default field value
+      default: 0
+    layer:
+      # Field name as shown in UI
+      name: Layer
+      # Description of the field
+      description: The layer to send the text. 1-15
+      # Whether or not field is required (default = false)
+      required: true
+      # Advanced fields are only shown when the advanced mode is enabled for the user (default = false)
+      advanced: true
+      # Example value that can be passed for this field
+      example: 1
+      # The default field value
+      default: 1
+    transparent:
+      # Field name as shown in UI
+      name: Transparency
+      # Description of the field
+      description: Should the background be transparent?
+      # Whether or not field is required (default = false)
+      required: false
+      # Advanced fields are only shown when the advanced mode is enabled for the user (default = false)
+      advanced: false
+      # Example value that can be passed for this field
+      example: true
+      # The default field value
+      default: true
+
